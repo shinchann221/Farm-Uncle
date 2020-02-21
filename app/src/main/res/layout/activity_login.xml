@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/vegetables"
     tools:context=".Login">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login_background_tint" />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/farm_uncle_transparent" />
+
+    <View
+        android:id="@+id/login_line1"
+        android:layout_width="75dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/login_logo"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/login_discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_line1"
+        android:layout_margin="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="Farm Uncle is the best On Demand Vegetable Service application yet.
+Order best vegetables delivered directly from farms."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/login_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_discription"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/black"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/Farm_Uncle_Dark"
+        app:tabSelectedTextColor="@android:color/black" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/login_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_tablayout" />
+
+</RelativeLayout>

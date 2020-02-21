@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".SignIn">
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_box"
+        android:hint="Email"
+        android:drawableStart="@drawable/ic_mail_outline_black"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:drawablePadding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#BF000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/email_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="40dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_box"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="#000"
+        android:drawableStart="@drawable/ic_lock_outline_black"
+        android:drawablePadding="10dp"
+        android:textColorHint="#BF000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/password_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="40dp" />
+
+
+    <Button
+        android:id="@+id/emailSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFB337"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="OR"
+        android:textSize="17sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

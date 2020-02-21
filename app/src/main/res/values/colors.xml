@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="Farm_Uncle">#FFFFC648</color>
+    <color name="Farm_Uncle_Dark">#A88235</color>
     <color name="TransparentWhite">#cccccc</color>
+    <color name="transparent">#00000000</color>
 </resources>

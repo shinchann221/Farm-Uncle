@@ -37,7 +37,6 @@ public class Welcome extends AppCompatActivity {
         }
         setContentView(R.layout.welcome);
 
-        getSupportActionBar().hide();
 
         viewPager = findViewById(R.id.welcome_viewpager);
         adapter = new welcome_adapter(this);
