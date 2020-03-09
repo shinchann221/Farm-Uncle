@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".SignIn">
+    tools:context=".SignIn"
+    android:id="@+id/signin_fragment">
 
 
     <EditText

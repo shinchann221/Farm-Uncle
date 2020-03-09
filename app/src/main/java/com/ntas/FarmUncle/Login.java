@@ -17,7 +17,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         tablayout = findViewById(R.id.login_tablayout);
         viewPager = findViewById(R.id.login_viewpager);
         Loginadapter adapter = new Loginadapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
