@@ -7,4 +7,8 @@
     <color name="Farm_Uncle_Dark">#A88235</color>
     <color name="TransparentWhite">#cccccc</color>
     <color name="transparent">#00000000</color>
+    <color name="text_red">#F20C3A</color>
+    <color name="dark_blue">#011D42</color>
+    <color name="light_blue">#9FF2DD</color>
+    <color name="slate_gray">#2A4B6D</color>
 </resources>

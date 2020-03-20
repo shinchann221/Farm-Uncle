@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/login_background_tint" />
+        android:src="#D9FFFFFF" />
 
     <ImageView
         android:id="@+id/login_logo"
@@ -48,8 +48,8 @@ Order best vegetables delivered directly from farms."
         app:tabGravity="fill"
         app:tabIndicatorColor="@android:color/black"
         app:tabMode="fixed"
-        app:tabTextColor="@color/Farm_Uncle_Dark"
-        app:tabSelectedTextColor="@android:color/black" />
+        app:tabTextColor="@android:color/black"
+        app:tabSelectedTextColor="@color/Farm_Uncle_Dark" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/login_viewpager"

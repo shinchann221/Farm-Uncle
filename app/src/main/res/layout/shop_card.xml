@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shop_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#F1F1F1">
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/search_box"
+        android:elevation="2dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/shopcard_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/farm_uncle_logo" />
+
+
+        <TextView
+            android:id="@+id/shopcard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/shopcard_img"
+            android:layout_marginHorizontal="10dp"
+            android:text="Title"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopcard_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcard_title"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/shopcard_img"
+            android:text="Price: 20 Rs"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp" />
+
+
+        <ImageButton
+            android:id="@+id/shopcard_addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcard_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_add_button"
+            android:elevation="2dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/shopcard_quantity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/shopcard_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="80dp"
+            android:gravity="center"
+            android:text="10.5"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/shopcard_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcard_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/ic_plus_symbol"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/shopcard_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcard_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_minus_symbol"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

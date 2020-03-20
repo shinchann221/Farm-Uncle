@@ -284,7 +284,7 @@ public class SignUp extends Fragment {
             } else if (a == 1) {
                 uploaddata();
             } else if (a == 2) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), Shop.class);
                 getActivity().startActivity(intent);
             }
         } else {

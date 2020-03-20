@@ -168,10 +168,10 @@ public class SignIn extends Fragment implements View.OnClickListener {
     private void updateUI(FirebaseUser user, int value) {
         if (user != null) {
             if (value == RC_SIGN_IN) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), Shop.class);
                 getActivity().startActivity(intent);
             } else if (value == 2) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), Shop.class);
                 getActivity().startActivity(intent);
             } else if (value == 0) {
                 mainpage();
