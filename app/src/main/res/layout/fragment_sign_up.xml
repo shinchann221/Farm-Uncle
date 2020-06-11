@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_box"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:textColor="#000"
+        android:textColorHint="#99000000"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40sp"
+        android:background="@drawable/login_box"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:textColor="#000"
+        android:textColorHint="#99000000"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/mobile_textv"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40sp"
+        android:background="@drawable/login_box"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:textColor="#000"
+        android:textColorHint="#99000000"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40sp"
+        android:background="@drawable/login_box"
+        android:drawableStart="@drawable/ic_mail_outline_black"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:textColor="#000"
+        android:textColorHint="#99000000"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40sp"
+        android:background="@drawable/login_box"
+        android:drawableStart="@drawable/ic_lock_outline_black"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="#000"
+        android:textColorHint="#99000000"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/Farm_Uncle"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
